@@ -1,6 +1,7 @@
 ---
-published: false
+published: true
 layout: post
+title: _init_
 ---
 ## THM-Writeups Confidential
 
