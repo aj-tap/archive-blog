@@ -1,5 +1,6 @@
 ---
 published: false
+layout: post
 ---
 ## THM-Writeups Confidential
 
@@ -22,5 +23,3 @@ We got our hands on a confidential case file from some self-declared "black hat 
 
 ##### Take a screenshot of the QR code, then decode it to retrieve the flag. 
 ![writeups_confidential-3]({{site.baseurl}}/images/Writeups/writeups_confidential-3.png){:height="250px" width="250px"}
-
-
