@@ -42,9 +42,9 @@ int __clrcall WinMain(
 #### Let's rename this function as main 
 ---
 
-![]({{site.baseurl}}/images/SimpleCrackme/SimpleCrackme-5.png){:height="450px" width="450px"}
+![]({{site.baseurl}}/images/SimpleCrackme/SimpleCrackme-5.png)
 
-![]({{site.baseurl}}/images/SimpleCrackme/SimpleCrackme-6.png){:height="450px" width="450px"}
+![]({{site.baseurl}}/images/SimpleCrackme/SimpleCrackme-6.png)
 #### The program compares two string values, one of which is a user-provided string from a buffer and the other of which is a password that can be seen by following the pointer. To follow the pointer simply right click and open reference in ghidra or open Defined strings. 
 ![]({{site.baseurl}}/images/SimpleCrackme/SimpleCrackme-7.png)
 #### We can see here that the password string is located at 140003438, which is referenced and compared to the user input buffer.
