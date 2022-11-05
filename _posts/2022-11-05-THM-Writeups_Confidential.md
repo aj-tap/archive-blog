@@ -1,7 +1,7 @@
 ---
 published: true
 layout: post
-title: _init_
+title: THM-Writeups_Confidential
 ---
 ## THM-Writeups Confidential
 
