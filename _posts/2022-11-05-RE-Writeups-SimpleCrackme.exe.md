@@ -1,0 +1,45 @@
+---
+published: true
+layout: post
+title: RE-Writeups SimpleCrackme.exe - Finding the Main function
+---
+### File name: C:/Users/user/Desktop/SimpleCrackMe.exe
+### Size: 19456(19.00 kB)
+### MD5: 5ca23d1110ac04a9ea1e54a1c7696065
+### SHA1: 23ae3c2a8ce88a21442ceaa83198f806c46b2eb8
+
+### entry point: 0000000140002210
+### Address of main function 1400012c0
+### Password string: 1ecc7dd7b9763028e119e5046268d922
+
+---
+#### Let's open Ghidra and examine the symbol table. Proceed to the binary's entry point. Then, launch Function Graph.(Window tab -> Function Graph)
+
+![]({{site.baseurl}}/images/SimpleCrackme/SimpleCrackme-1.png)
+
+![]({{site.baseurl}}/images/SimpleCrackme/SimpleCrackme-2.png)
+
+#### Working backwards from the binary's entry point is one way to find the main function. Finding the return value 0 (the syscalls for exit).
+
+![]({{site.baseurl}}/images/SimpleCrackme/SimpleCrackme-3.png)
+
+#### This appears to be the main function because it pushes three arguments, which are the argc() count of the number of arguments and the argv() number of strings passing. We can also see the operands Test AL, AL and Mov EBX, EAX. which appears to be a return 0.
+#### Let's rename this function as main 
+---
+![]({{site.baseurl}}/images/SimpleCrackme/SimpleCrackme-4.png){:height="650px" width="650px"}
+
+![]({{site.baseurl}}/images/SimpleCrackme/SimpleCrackme-5.png){:height="450px" width="450px"}
+
+![]({{site.baseurl}}/images/SimpleCrackme/SimpleCrackme-6.png){:height="450px" width="450px"}
+#### The program compares two string values, one of which is a user-provided string from a buffer and the other of which is a password that can be seen by following the pointer. To follow the pointer simply right click and open reference in ghidra or open Defined strings. 
+![]({{site.baseurl}}/images/SimpleCrackme/SimpleCrackme-7.png)
+#### We can see here that the password string is located at 140003438, which is referenced and compared to the user input buffer.
+#### Let's run the program and input the string password 
+![]({{site.baseurl}}/images/SimpleCrackme/SimpleCrackme-8.png)
+
+#### Summary 
+#### Finding the main function can be difficult for beginners. This is especially true when the code is obfuscated and the symbol table is unavailable. Writing and compiling your own scripts will train your eye for this. I've included links below to websites where you can practice reverse engineering without having to set up a machine.
+
+---
+##### https://godbolt.org/
+##### https://dogbolt.org/
