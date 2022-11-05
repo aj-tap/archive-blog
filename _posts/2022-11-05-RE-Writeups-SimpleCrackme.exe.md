@@ -3,14 +3,18 @@ published: true
 layout: post
 title: RE-Writeups SimpleCrackme.exe - Finding the Main function
 ---
-### File name: C:/Users/user/Desktop/SimpleCrackMe.exe
-### Size: 19456(19.00 kB)
-### MD5: 5ca23d1110ac04a9ea1e54a1c7696065
-### SHA1: 23ae3c2a8ce88a21442ceaa83198f806c46b2eb8
+![]({{site.baseurl}}/images/SimpleCrackme/cat.gif)
 
-### entry point: 0000000140002210
-### Address of main function 1400012c0
-### Password string: 1ecc7dd7b9763028e119e5046268d922
+```
+File name: SimpleCrackMe.exe
+Size: 19456(19.00 kB)
+MD5: 5ca23d1110ac04a9ea1e54a1c7696065
+SHA1: 23ae3c2a8ce88a21442ceaa83198f806c46b2eb8
+
+entry point: 0000000140002210
+Address of main function 1400012c0
+Password string: 1ecc7dd7b9763028e119e5046268d922
+```
 
 ---
 #### Let's open Ghidra and examine the symbol table. Proceed to the binary's entry point. Then, launch Function Graph.(Window tab -> Function Graph)
@@ -20,13 +24,23 @@ title: RE-Writeups SimpleCrackme.exe - Finding the Main function
 ![]({{site.baseurl}}/images/SimpleCrackme/SimpleCrackme-2.png)
 
 #### Working backwards from the binary's entry point is one way to find the main function. Finding the return value 0 (the syscalls for exit).
+https://learn.microsoft.com/en-us/windows/win32/winmsg/wm-quit
+```
+# Code snippets of WinMain function which returns int value zero when it terminates
+int __clrcall WinMain(
+  [in] HINSTANCE hInstance,
+  [in] HINSTANCE hPrevInstance,
+  [in] LPSTR     lpCmdLine,
+  [in] int       nShowCmd
+);
+```
+
 
 ![]({{site.baseurl}}/images/SimpleCrackme/SimpleCrackme-3.png)
 
 #### This appears to be the main function because it pushes three arguments, which are the argc() count of the number of arguments and the argv() number of strings passing. We can also see the operands Test AL, AL and Mov EBX, EAX. which appears to be a return 0.
 #### Let's rename this function as main 
 ---
-![]({{site.baseurl}}/images/SimpleCrackme/SimpleCrackme-4.png){:height="650px" width="650px"}
 
 ![]({{site.baseurl}}/images/SimpleCrackme/SimpleCrackme-5.png){:height="450px" width="450px"}
 
