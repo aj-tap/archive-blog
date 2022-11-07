@@ -4,7 +4,8 @@ layout: post
 title: THM-Writeups_Cyborg
 ---
 ![]({{site.baseurl}}/images/Writeups/writeups-cyborg.jpeg)
-A box involving encrypted archives, source code analysis and more. 
+
+###### A box involving encrypted archives, source code analysis and more. 
 
 ---
 
