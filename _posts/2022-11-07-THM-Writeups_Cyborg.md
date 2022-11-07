@@ -3,7 +3,8 @@ published: true
 layout: post
 title: THM-Writeups_Cyborg
 ---
-### A box involving encrypted archives, source code analysis and more. 
+![]({{site.baseurl}}/images/Writeups/writeups-cyborg.jpeg)
+A box involving encrypted archives, source code analysis and more. 
 
 ---
 
@@ -188,6 +189,3 @@ alex@ubuntu:~$ sudo /etc/mp3backups/backup.sh
 root@ubuntu:~# cat /root/root.txt 
 flag{Than5s_f0r_play1ng_H0p£_y0u_enJ053d}
 ```
-
-
-
