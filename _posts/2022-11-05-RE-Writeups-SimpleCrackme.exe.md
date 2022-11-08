@@ -2,6 +2,7 @@
 published: true
 layout: post
 title: RE-Writeups SimpleCrackme.exe - Finding the Main function
+categories: Writeup
 ---
 ![]({{site.baseurl}}/images/SimpleCrackme/cat.gif)
 

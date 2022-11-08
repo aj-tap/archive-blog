@@ -2,6 +2,7 @@
 published: true
 layout: post
 title: THM-Writeups_Cyborg
+categories: Writeup
 ---
 ![]({{site.baseurl}}/images/Writeups/writeups-cyborg.jpeg)
 

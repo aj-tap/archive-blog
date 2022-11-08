@@ -1,7 +1,8 @@
 ---
 published: true
 layout: post
-title: THM-Writeups_Confidential
+title: THM-Writeup_Confidential
+categories: Writeup 
 ---
 We got our hands on a confidential case file from some self-declared "black hat hackers"... it looks like they have a secret invite code available within a QR code, but it's covered by some image in this PDF! If we want to thwart whatever it is they are planning, we need your help to uncover what that QR code says.
 
