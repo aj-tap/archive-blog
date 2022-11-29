@@ -6,15 +6,16 @@ published: true
 ---
 <script src="https://tryhackme.com/badge/994867"></script>
 
-My name is Aj, I'm currently a Computer Science student, quenching a never-ending thirst for knowledge. I've been tinkering with old computers and video games since I was a kid. I'm curious about how they work. This sparked my interest in learning security, and I'm committing to learning and making the cyber world a safer place.
+My name is Aj. I'm currently a Computer Science student, quenching a never-ending thirst for knowledge. I've been tinkering with old computers and video games since I was a kid. I'm curious about how they work. These sparked my interest in learning security, and I'm committing to learning and making the cyber world a safer place.
 
-This site will contain resources, security blogs, and write-ups. Feel free to contact me; I enjoy collaborating and working on nerdy projects.
+This website will include resources, security blogs, and articles. Feel free to contact me 😄.
 
 ### Certifications
 + ##### [Elearn Junior Penetration Tester](https://verified.elearnsecurity.com/certificates/8706593d-cf8e-431f-9960-7a34bc638a08)
 + ##### CC, Certified in Cybersecurity℠ (ISC)²
 + ##### [Oracle Autonomous Database Cloud Certified Specialist](https://catalog-education.oracle.com/pls/certview/sharebadge?id=5C0F7E707BD234CAD160B6257A1AB6B81353C2A1AD1A3553F7C3EB884A190474)
-+ ##### [Ethical hacking: Vulnerability Assesment & Penetration Testing](https://drive.google.com/file/d/1n4O9EztbqgpNhvGh9b485KQH8dHw65dl/view), Certificate of Completion, GUIDEM
++ ##### [Oracle Cloud Infrastructure 2022 Certified Foundations Associate](https://catalog-education.oracle.com/pls/certview/sharebadge?id=9586E8CE88BF7381B49C3FEED00F093974EB79BEC4082D76417CA37EB198D30E)
++ ##### [Ethical hacking: Vulnerability Assessment & Penetration Testing](https://drive.google.com/file/d/1n4O9EztbqgpNhvGh9b485KQH8dHw65dl/view), Certificate of Completion, GUIDEM
 + ##### [Cyber Defense & Threat hunting](https://drive.google.com/file/d/1Hs0JMR_R7uH3URfbB5OibkUh9kvNOney/view), Certificate of Completion, GUIDEM
 + ##### Practical Malware Analysis & Triage, Certificate of Completion, TCM
 + ##### [Shopee Code League 2020 (Student Category)](https://drive.google.com/file/d/157qDxL5zopZfOQy6b8m5mbkr9UY245tA/view), Certificate of Participation
