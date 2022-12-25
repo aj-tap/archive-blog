@@ -19,6 +19,7 @@ published: true
 - https://quad9.net/
 
 ## OSINT
+
 ### Search Engines
 - https://www.shodan.io/
 - https://search.censys.io/
@@ -26,6 +27,7 @@ published: true
 - https://www.zoomeye.org/
 - https://hunter.io/
 - https://wigle.net/
+
 ### Air & Space Tracking
 - https://globe.adsbexchange.com/
 - https://flightaware.com/live/
@@ -35,11 +37,13 @@ published: true
 - https://satellitemap.space/
 - https://geoxc-apps2.bd.esri.com/Visualization/sat2/index.html
 - https://in-the-sky.org/satmap_worldmap.php
+
 ### Land & Sea Tracking
 - https://www.openrailwaymap.org/
 - https://mobility.portal.geops.io/
 - https://www.opentraintimes.com/maps
 - https://satellites.pro/
+
 ### Camera Tracking
 - http://www.insecam.org/
 - http://world-webcams.nsspot.net/
@@ -104,10 +108,12 @@ published: true
 - https://www.youtube.com/@z-winkuniversityzu-bugboun5829
 
 ## Books related in Cybersecurity
+
 ###  Malware Development and Analysis
 - Practical Malware Analysis: The Hands-On Guide to Dissecting Malicious Software
 - Reversing: Secrets of Reverse Engineering - 
 - Learning Malware Analysis: Explore the concepts, tools, and techniques to analyze and investigate Windows malware
+
 ### Network Forensics
 - The Practice of Network Security Monitoring
 - Practical Packet Analysis

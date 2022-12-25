@@ -1,13 +1,16 @@
 ---
 layout: default
 ---
-
+<div class="container mt-5 pt-5" id="medium">    
+  <div class="row" id="jsonContent">
+</div>
+<hr class="my-12"/>
 <div class="posts">
   {% for post in site.posts %}
     <article class="post">
 
       <h1><a href="{{ site.baseurl }}{{ post.url }}">{{ post.title }}</a></h1>
-
+            
       <div class="entry">
         {{ post.excerpt }}
       </div>
