@@ -21,8 +21,8 @@ categories: Writeup
 <div id='id-hash_values'/>
 
 ## Hash Values (Trivial) 
+##### 1. Provide the ransomware name for the hash '63625702e63e333f235b5025078cea1545f29b1ad42b1e46031911321779b6be' using open-source lookup tools?
 
-#### Provide the ransomware name for the hash '63625702e63e333f235b5025078cea1545f29b1ad42b1e46031911321779b6be' using open-source lookup tools
 Several online tools can be used to determine which malware family this malicious sample belongs to. We can use Malshare, a public malware repository, to perform hash lookups to determine which malware family this binary belongs to.
 
 ![]({{site.baseurl}}/images/Writeups/writeups-pop-1.png)
@@ -34,12 +34,12 @@ Several online tools can be used to determine which malware family this maliciou
 <div id='id-ip_address'/>
 
 ## IP Address (Easy)
-#### What is the ASN for the third IP address observed?
+##### 2.0 What is the ASN for the third IP address observed?
 ![]({{site.baseurl}}/images/Writeups/writeups-pop-2.png)
 
 ##### Answer: Host Europe GmbH
 
-#### What is the domain name associated with the first IP address observed?
+##### 2.1 What is the domain name associated with the first IP address observed?
 ![]({{site.baseurl}}/images/Writeups/writeups-pop-3_4.png)
 
 ##### Answer: craftingalegacy.com
@@ -48,34 +48,34 @@ Several online tools can be used to determine which malware family this maliciou
 <div id='id-domain_names'/>
 
 ## Domain Names (Simple)
-#### Go to this report on app.any.run  and provide the first malicious URL request you are seeing, you will be using this report to answer the remaining questions of this task.
+##### 3.0 Go to this report on app.any.run  and provide the first malicious URL request you are seeing, you will be using this report to answer the remaining questions of this task.
 ![]({{site.baseurl}}/images/Writeups/writeups-pop-3_4.png)
 
-#### Answer: craftingalegacy.com
+##### Answer: craftingalegacy.com
 
-#### What term refers to an address used to access websites?
+##### 3.1 What term refers to an address used to access websites?
 A name is easier to remember than a long string of numbers. An IP address is a lengthy string of numbers. As a result, a domain name is formed to give a simple way for us to communicate with internet-connected devices without having to remember complex numbers.
 https://www.ietf.org/rfc/rfc1035.txt
 
-#### Answer: domain name
+##### Answer: domain name
 
 
-#### What type of attack uses Unicode characters in the domain name to imitate the a known domain?
+##### 3.2 What type of attack uses Unicode characters in the domain name to imitate the a known domain?
 DNS is limited to ASCII characters. This is where punycode comes in. It converts words that cannot be written in ASCII. For instance greek word characters. RFC 3492 described a way to apply this encoding to DNS labels using the a format.
 The issue is that an attacker can easily launch a domain name that replaces some ASCII characters with Unicode characters. This is an IDN homograph attack, also referred to as a **Punycode attack.**
 ![]({{site.baseurl}}/images/Writeups/writeups-pop-5.png)
 https://www.rfc-editor.org/rfc/rfc3492
 
-#### Answer: Punycode attack
+##### Answer: Punycode attack
 
 
-#### Provide the redirected website for the shortened URL using a preview: https://tinyurl.com/bw7t8p4u
+##### 3.3 Provide the redirected website for the shortened URL using a preview: https://tinyurl.com/bw7t8p4u?
 
 We can use Phishcheck is a tool to quickly gather information to a suspicious website. The link is redirected to tryhackme website. 
 ![]({{site.baseurl}}/images/Writeups/writeups-pop-6.png)
 
 
-#### Answer: https://tryhackme.com/
+##### Answer: https://tryhackme.com/
 ---
 
 <div id='id-Host_artifacts'/>
@@ -83,33 +83,32 @@ We can use Phishcheck is a tool to quickly gather information to a suspicious we
 
 ## Host Artifacts (Annoying)
 
-
-#### What is the suspicious IP the victim machine tried to connect to in the screenshot above?
+##### 4.0 What is the suspicious IP the victim machine tried to connect to in the screenshot above?
 ![]({{site.baseurl}}/images/Writeups/writeups-pop-ip.png)
 Based on logs, It is a Powershell script execution that connects to 35.214.215.3 by opening a socket on 1047.  192.168.75.22 is a RFC1918 address which more likely the host, and the c2 server's address is 35.214.215.33.
 ##### Answer: 35.214.215.33
 
-#### Use the tools introduced in task 2 and provide the name of the malware associated with the IP address
+##### 4.1 Use the tools introduced in task 2 and provide the name of the malware associated with the IP address?
 Using Alien OTX, we can find associated files with the IP address
 ![]({{site.baseurl}}/images/Writeups/writeups-pop-7.png)
 The file associated with the IP is associated with the emotet malware familiy.
 ![]({{site.baseurl}}/images/Writeups/writeups-pop-8.png)
 
-#### Answer: emotet
+##### Answer: emotet
 
 
-#### Using your OSINT skills, what is the name of the malicious document associated with the dropped binary?
+#### 4.2 Using your OSINT skills, what is the name of the malicious document associated with the dropped binary?
 ![]({{site.baseurl}}/images/Writeups/writeups-pop-9.png)
 ##### Answer: g_jugk.exe
 
-#### Use your OSINT skills and provide the name of the malicious document associated with the dropped binary?
+##### 4.3 Use your OSINT skills and provide the name of the malicious document associated with the dropped binary?
 
 Using Google we can find out there is Any.run report by search using the name of the binary.
 ![]({{site.baseurl}}/images/Writeups/writeups-pop-10.png)
 ![]({{site.baseurl}}/images/Writeups/writeups-pop-11.png)
 ![]({{site.baseurl}}/images/Writeups/writeups-pop-docname.png)
 
-##### Answer: CMO-100120 CDW-102220.doc
+##### 4.4 Answer: CMO-100120 CDW-102220.doc
 
 ---
 
@@ -117,13 +116,13 @@ Using Google we can find out there is Any.run report by search using the name of
 
 
 ## Network Artifacts (Annoying)
-#### What browser uses the User-Agent string shown in the screenshot above?
+##### 5.0 What browser uses the User-Agent string shown in the screenshot above?
 Using https://developers.whatismybrowser.com/, we can easily determine the browser of the user agent which is Internet explorer.
 ![]({{site.baseurl}}/images/Writeups/writeups-pop-12.png)
 
 ##### Answer: Internet Explorer
 
-#### How many POST requests are in the screenshot from the pcap file?
+##### 5.1 How many POST requests are in the screenshot from the pcap file?
 The pcap file contains six POST requests, according to wireshark.
 ![]({{site.baseurl}}/images/Writeups/writeups-pop-13.png)
 
@@ -135,12 +134,12 @@ The pcap file contains six POST requests, according to wireshark.
 
 
 ##  Tools (Challenging)
-#### Provide the method used to determine similarity between the files? 
+##### 6.0 Provide the method used to determine similarity between the files? 
 By making minor changes to their malware samples, adversaries can easily evade signature-based detection engines. Fuzzy hashing will use an algorithm such as SSDEEP to hash files into parts and then compare the similarity of those parts. It computes the similarity of two or more files. 
 
 ##### Answer: Fuzzy hashing
 
-#### Provide the alternative name for fuzzy hashes without the abbreviation
+##### 6.1 Provide the alternative name for fuzzy hashes without the abbreviation?
 ##### Answer: context triggered piecewise hashes
 
 ---
@@ -149,14 +148,13 @@ By making minor changes to their malware samples, adversaries can easily evade s
 
 ## TTPs (Tough)
 
-#### Navigate to ATT&CK Matrix webpage. How many techniques fall under the Exfiltration category?
+##### 7.0 Navigate to ATT&CK Matrix webpage. How many techniques fall under the Exfiltration category?
 ![]({{site.baseurl}}/images/Writeups/writeups-pop-14.png)
 
 ##### Answer: 9
 
-#### Chimera is a China-based hacking group that has been active since 2018. What is the name of the commercial, remote access tool they use for C2 beacons and data exfiltration?
+##### 7.1 Chimera is a China-based hacking group that has been active since 2018. What is the name of the commercial, remote access tool they use for C2 beacons and data exfiltration?
 Exfiltration Over c2 Channel Technique (T1041) Chimera used Cobalt Strike for their C2 beacons, which is a popular and preferred tool among threat actors.
 ![]({{site.baseurl}}/images/Writeups/writeups-pop-15.png)
 
 ##### Answer: Cobalt Strike
-
