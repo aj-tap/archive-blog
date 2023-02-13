@@ -8,6 +8,7 @@ categories: Writeup
 Learn the basics of Splunk.
 ## Task 3 Splunk Components 
 3.0. Which component is used to collect and send data over the Splunk instance?
+
 Answer: Forwarder
 
 ## Task 4 Navigating Splunk
@@ -35,10 +36,12 @@ Answer: Smith
 
 5.3. What is the number of events that originated from all countries except France?  
 ![]({{site.baseurl}}/images/Writeups/THM-Splunk-basic-3.png)
+
 Answer:   2,814
 
 5.4. How many VPN Events were observed by the IP 107.3.206.58?
 ![]({{site.baseurl}}/images/Writeups/THM-Splunk-basic-4.png)
+
 Answer: 14
 
 --- 
