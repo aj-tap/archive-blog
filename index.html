@@ -1,16 +1,54 @@
 ---
 layout: default
+permalink: /
+title: Home
 ---
-<div class="container mt-5 pt-5" id="medium">    
-  <div class="row" id="jsonContent">
+<section data-aos="fade-down" style="margin-top: -100px;"><div class="py-5 p-lg-5">
+  <div class="container mt-5 pt-5" id="medium">   
+    <div class="row" id="jsonContent">
+  </div>
+  
+  <hr>
+
+  <section data-aos="fade-down" data-aos-delay="50">
+    <div class="container bg-dark py-5">
+        <div class="row">
+            <div class="col-md-8 col-xl-6 text-center mx-auto">
+              <p class="fw-bold text-success mb-2">Blogs</p>
+                <h3 class="fw-bold">Recent Posts</h3>
+            </div>
+        </div>
+    <div class="py-5 p-lg-5">
+         
+        <div class="list-group">          
+          <div class="card">
+            {% for post in site.posts limit:10 %}
+            <div class="card-body">
+                <h4 class="card-title"> <a href="{{ site.baseurl }}{{ post.url }}"> {{ post.title }} </a> </h4>
+                <h6 class="text-muted card-subtitle mb-2"> {{ post.date | date_to_string }} </h6>
+            </div>
+            {% endfor %}
+        </div>          
+        </div>
+      </div>
+        
+        
+</section>
+
+
+<hr>
+
+  <section data-aos="fade-down">
+      <div class="container bg-dark py-5">
+          <div class="row">
+              <div class="col-md-8 col-xl-6 text-center mx-auto">
+                  <p class="fw-bold text-success mb-2">Social Media</p>
+                  <h3 class="fw-bold">Follow me on Twitter</h3>
+              </div>
+          </div>
+          <div class="py-5 p-lg-5"><section>
+<a class="twitter-timeline" data-height="900" data-dnt="true" data-theme="dark" href="https://twitter.com/aj_tap?ref_src=twsrc%5Etfw">Tweets by aj_tap</a> <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
+</section>
 </div>
-<hr class="my-12"/>
-<div class="posts">
-  <h2>Recent post</h2>
-  <div class="list-group">
-  {% for post in site.posts %}
-  <a href="{{ site.baseurl }}{{ post.url }}" class="list-group-item list-group-item-action"> {{ post.date | date_to_string }} &nbsp; {{ post.title }} </a>
-  {% endfor %}
-</div>
-</div>
-<a class="twitter-timeline" data-dnt="true" href="https://twitter.com/aj_tap?ref_src=twsrc%5Etfw">Tweets by aj_tap</a> <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
+      </div>
+  </section>
