@@ -46,4 +46,4 @@ Answer: 14
 
 --- 
 ## References 
-https://tryhackme.com/room/splunk101
+- https://tryhackme.com/room/splunk101

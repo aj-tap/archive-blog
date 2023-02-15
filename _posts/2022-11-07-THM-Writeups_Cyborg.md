@@ -4,7 +4,7 @@ layout: post
 title: THM-Writeups_Cyborg
 categories: Writeup
 ---
-![]({{site.baseurl}}/images/Writeups/writeups-cyborg.jpeg)
+![]({{site.baseurl}}/images/Writeups/writeups-cyborg.jpeg){:width="100%"}
 
 ###### A box involving encrypted archives, source code analysis and more. 
 
@@ -66,10 +66,10 @@ http://10.10.125.131 [200 OK] Apache[2.4.18], Country[RESERVED][ZZ], HTTPServer[
 #### Let's look into the web application. We discovered that the root url contains a default Apache web page. Further investigation revealed a file in /etc/squid/squid.conf and etc/squid/passwd. It appears to be a squid proxy server that has been incorrectly configured.
 
 ### /etc/squid/squid.conf Page
-![]({{site.baseurl}}/images/Writeups/writeups-cyborg-1.png)
+![]({{site.baseurl}}/images/Writeups/writeups-cyborg-1.png){:width="100%"}
 
 ### /etc/squid/passwd Page
-![]({{site.baseurl}}/images/Writeups/writeups-cyborg-2.png)
+![]({{site.baseurl}}/images/Writeups/writeups-cyborg-2.png){:width="100%"}
 
 #### Let's use the dirb tool to discover the site's hidden directories.
 ```
@@ -93,12 +93,12 @@ GENERATED WORDS: 4612
 	==> DIRECTORY: http://10.10.125.131/admin/    
 ```
 ### /admin Page
-![]({{site.baseurl}}/images/Writeups/writeups-cyborg-3.png)
-![]({{site.baseurl}}/images/Writeups/writeups-cyborg-4.png)
+![]({{site.baseurl}}/images/Writeups/writeups-cyborg-3.png){:width="100%"}
+![]({{site.baseurl}}/images/Writeups/writeups-cyborg-4.png){:width="100%"}
 
 We just discovered the admin page. Based on the conversation, Alex set up a squid proxy, but due to a lack of knowledge of the technology, this results in a misconfiguration, which leads to an information disclosure. We found out before that the password hash is located on /squid/passwd. The admin page also includes an archive.tar file. 
 
-![]({{site.baseurl}}/images/Writeups/writeups-cyborg-5.png)
+![]({{site.baseurl}}/images/Writeups/writeups-cyborg-5.png){:width="100%"}
 
 ```
 ┌─[aj-tap@parrot]─[~/Desktop/cyborg/home/field/dev/final_archive]
