@@ -1,6 +1,6 @@
 ---
 published: true
-layout: post
+layout: post_toc
 title: THM-Writeups_Anthem
 categories: Writeup
 ---

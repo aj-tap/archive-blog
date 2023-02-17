@@ -1,0 +1,33 @@
+---
+layout: default
+---
+<article>
+    <div class="overlay"></div>
+      <div class="container">
+        <div class="row">            
+          <div class="col-sm-3 mx-auto">                                                
+                    <nav>
+                    {% include toc.html html=content %}
+                    </nav>
+          </div>
+
+          <div class="col-sm-9 mx-auto">
+            <div class="page-heading">
+              <h1>{{ page.title }}</h1>
+              {% if page.description %}
+              <span class="subheading">{{ page.description }}</span>
+              {% endif %}
+              {{ content }}
+              <div class="date">
+                Written on {{ page.date | date: "%B %e, %Y" }}
+              </div>
+              <br>
+              {% include share.html %}
+              <br>
+              {% include disqus.html %}
+            </div>
+          </div>
+        </div>
+      </div> 
+</article>
+</div>

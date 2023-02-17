@@ -1,6 +1,6 @@
 ---
 published: true
-layout: post
+layout: post_toc
 title: THM-Writeups Basic Static Analysis
 categories: Writeup
 ---
