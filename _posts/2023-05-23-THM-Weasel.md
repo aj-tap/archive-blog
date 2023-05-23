@@ -1,7 +1,7 @@
 ---
 published: true
 layout: post_toc
-title: 2023-05-23-THM-Weasel
+title: THM-Weasel
 categories: Writeup
 ---
 # Weasel
@@ -131,6 +131,6 @@ nc -lvnp 4445
 Once you have successfully gained access, you can effortlessly retrieve the root flag located in the Administrator directory on the Desktop.
 
 --- 
-## References
+#### References
 - https://tryhackme.com/room/weasel
 - https://medium.com/risan/upgrade-your-ssh-key-to-ed25519-c6e8d60d3c54
