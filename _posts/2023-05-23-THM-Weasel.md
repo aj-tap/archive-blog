@@ -87,7 +87,7 @@ Once you have successfully connected to the SSH, you can easily retrieve the use
 
 ![]({{site.baseurl}}/assets/img/2023-05-23-THM-Weasel-14.png){:width="70%"}
 
-Take note the results of the default creds of the Default User Name which is ``wUqnKWqzha*W!PWrPRWi!M8faUn``
+Take note the results of the default creds of the Default User Name.
 
 #### Privilege Escalation 
 
