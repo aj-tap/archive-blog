@@ -4,7 +4,7 @@ layout: post_toc
 title: THM-Tech_Supp0rt
 categories: Writeup
 ---
-# Tech_Supp0rt
+
 ![]({{site.baseurl}}/assets/img/2023-05-29-THM-Tech_Supp0rt-20.png){:width="70%"}
 
 Hack into the scammer's under-development website to foil their plans.
@@ -81,7 +81,7 @@ Through our investigation, we discovered that the "**/usr/bin/iconv**" binary ca
 
 ---
 ## References 
-- https://tryhackme.com/room/techsupp0rt1
-- https://gtfobins.github.io/gtfobins/iconv/
-- https://packetstormsecurity.com/files/162591
-- https://cyberchef.org/#recipe=From_Base58('123456789ABCDEFGHJKLMNPQRSTUVWXYZabcdefghijkmnopqrstuvwxyz',true)From_Base32('A-Z2-7%3D',false)From_Base64('A-Za-z0-9%2B/%3D',true,false)&input=N3NLdm50WGRQRUpheGF6Y2U5UFhpMjR6YUZyTGlLV0NrIA
+- [https://tryhackme.com/room/techsupp0rt1]()
+- [https://gtfobins.github.io/gtfobins/iconv/]()
+- [https://packetstormsecurity.com/files/162591]()
+- [https://cyberchef.org/#recipe=From_Base58('123456789ABCDEFGHJKLMNPQRSTUVWXYZabcdefghijkmnopqrstuvwxyz',true)From_Base32('A-Z2-7%3D',false)From_Base64('A-Za-z0-9%2B/%3D',true,false)&input=N3NLdm50WGRQRUpheGF6Y2U5UFhpMjR6YUZyTGlLV0NrIA]()

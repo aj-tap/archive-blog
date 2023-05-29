@@ -4,7 +4,7 @@ layout: post_toc
 title: THM-Weasel
 categories: Writeup
 ---
-# Weasel
+
 I think the data science team has been a bit fast and loose with their project resources.
 
 #### Nmap Result

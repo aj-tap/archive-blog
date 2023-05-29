@@ -4,7 +4,6 @@ layout: post_toc
 title: CyberDefender-PacketDetective
 categories: Writeup
 ---
-# Packet Detective 
 
 **Scenario:**
 As a SOC analyst, explore a collection of Wireshark pcap files that delve into various attack tactics, including evasion and lateral movement. Analyze network traffic captured within these pcaps to uncover valuable insights and detect potential command and control (C&C) activities.
